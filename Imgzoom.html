@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brettspill Klubb</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        .navbar {
+            background-color: #505050;
+            overflow: hidden;
+            width: auto;    
+            margin-top: 0px; 
+            margin-bottom: -20px; 
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+        .logo {
+            max-width: 100px;
+        }
+        .splash-image {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .splash-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1.1);
+            transition: transform 0.5s ease;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            position: relative;
+            z-index: 1; /* Plassere innhold over bildet */
+        }
+        .events, .members {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            width: 100%;
+        }
+        @media (min-width: 768px) {
+            .splash-image img {
+                transform: translate(-50%, -50%) scale(1.2); /* Zoom inn på større skjermer */
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#forsiden">Forsiden</a>
+         <a href="#kontakt">Kontakt</a>
+         <a href="#merinfo">Mer Informasjon</a>
+    
+     </div><br>
+    <header>
+        <img src="Brettspill Logo.png" alt="Brettspill Klubb Logo" class="logo">
+        <h1>Volda/Ørsta Brettspelklubb</h1>
+    </header>
+
+    <div class="splash-image">
+        <img src="forsidebilde.jpg" alt="Forsidebilde">
+    </div>
+
+    <div class="container">
+        <div class="events">
+            <h2>Kommende Arrangementer</h2>
+            <ul>
+                <li>Spillkveld - 1. oktober 2024 kl. 18:00</li>
+                <li>Turnering - 15. oktober 2024 kl. 14:00</li>
+                <li>Spillhelg - 30. oktober 2024</li>
+            </ul>
+        </div>
+
+        <div class="members">
+            <h2>Administrerende Medlemmer</h2>
+            <ul>
+                <li>Ola Nordmann - Leder</li>
+                <li>Kari Nordmann - Kasserer</li>
+                <li>Per Hansen - Arrangementsansvarlig</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Kontakt oss: brettspillklubb@example.com | Tlf: 123 45 678</p>
+    </footer>
+</body>
+</html>
